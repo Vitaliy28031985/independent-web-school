@@ -617,3 +617,79 @@ color: var(--text-color-wite);
             font-size: 24px;
             line-height: calc(29 /24);
         }}
+
+        /* education */
+
+.header-education-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 40px;
+    background-size: cover;
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url('../images/page-curs.jpg');
+
+}
+.education-page {
+display: flex;
+justify-content: center;
+margin-top: 60px;
+}
+.education-list {
+display: grid;
+grid-template-columns: 223px;
+row-gap: 18px;
+}
+
+ @media screen and (min-width: 768px) {
+     .education-list {
+         grid-template-columns: 223px 223px;
+         grid-gap: 18px;
+     }
+ }
+
+ @media screen and (min-width: 1200px) {
+     .education-list {
+        grid-template-columns: 223px 223px 223px;
+        grid-gap: 18px;
+     }
+ }
+
+.education-list-item {
+    position: relative;
+    width: 180px;
+    padding-bottom: 10px;
+    background-color: var(--text-color-wite);
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px var(--team-box-shadow-one), 
+        0px 4px 4px var(--portfolio-color-one), 
+        1px 4px 6px var(--portfolio-color-two);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.education-list-item:hover {
+    transform: rotate(5deg);
+}
+
+.education-list-item img {
+width: 180px;
+height: 120px;
+}
+
+.education-list-item-link {
+    display: block;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(20 / 16);
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--background-color-footer); 
+    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.education-list-item-link:hover {
+    color: var(--text-color-braun);
+}
